@@ -69,12 +69,9 @@ class TodoList extends React.Component{
 		const match = new RegExp(escapeRegExp(this.state.searchQuery), 'i')
 		filteredArr = filteredArr.filter((todo) => match.test(todo.value))
 		
-		
 		if(this.state.showCompletedOnly){
 			filteredArr =  this.props.todos.filter(todo => todo.completed)
-			
 		}
-	
 		
 		return(
 			<div>

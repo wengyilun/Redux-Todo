@@ -21,7 +21,6 @@ class TodoItem extends React.Component{
 			return null
 		}
 	}
-	
 
 	toggleEdit = ()=>{
 		this.setState({isEditing: true})
